@@ -1,13 +1,13 @@
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 
-export default function History() {
+export default function Reports() {
   return (
     <div className="dashboard-layout">
       <Sidebar />
       <main className="dashboard-main">
-        <Topbar title="User History" subtitle="Review user history and records" />
-        <div className="page-card">History page</div>
+        <Topbar title="Reports" subtitle="View generated reports" />
+        <div className="page-card">Reports page</div>
       </main>
     </div>
   );
