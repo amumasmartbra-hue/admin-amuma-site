@@ -54,9 +54,9 @@ export default function Login() {
 
           <div className="device-visual-area">
             <div className="ecg-line"></div>
-            <div className="device-mockup">
+            {/* <div className="device-mockup">
               <span>amuma</span>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -129,4 +129,4 @@ export default function Login() {
       </div>
     </div>
   );
-}
+} 

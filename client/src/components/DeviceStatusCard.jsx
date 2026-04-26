@@ -1,4 +1,12 @@
-export default function DeviceStatusCard({ name, users, updated, lineClass = 'pink-line' }) {
+export default function DeviceStatusCard({
+  name,
+  users,
+  updated,
+  heartRate,
+  respiratoryRate,
+  lungSound,
+  lineClass = 'pink-line',
+}) {
   return (
     <div className="device-status-item">
       <div className="device-heart-shape">♥</div>
@@ -14,6 +22,22 @@ export default function DeviceStatusCard({ name, users, updated, lineClass = 'pi
             <span>Users</span>
             <strong>{users}</strong>
           </div>
+
+          <div>
+            <span>Heart Rate</span>
+            <strong>{heartRate ?? '--'} BPM</strong>
+          </div>
+
+          <div>
+            <span>Resp. Rate</span>
+            <strong>{respiratoryRate ?? '--'}</strong>
+          </div>
+
+          <div>
+            <span>Lung Sound</span>
+            <strong>{lungSound ?? '--'}</strong>
+          </div>
+
           <div>
             <span>Last Updated</span>
             <strong>{updated}</strong>
