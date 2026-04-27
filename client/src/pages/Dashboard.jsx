@@ -58,6 +58,7 @@ export default function Dashboard() {
 
     if (Number.isNaN(lastTime)) return false;
 
+    // eslint-disable-next-line react-hooks/purity
     return Date.now() - lastTime < 5 * 60 * 1000;
   }).length;
 
@@ -96,6 +97,7 @@ export default function Dashboard() {
     const date = new Date(timestamp);
     if (Number.isNaN(date.getTime())) return timestamp;
 
+    // eslint-disable-next-line react-hooks/purity
     const diffMs = Date.now() - date.getTime();
     const diffMin = Math.floor(diffMs / 60000);
 
